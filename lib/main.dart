@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:quiz3/home.dart';
+
+import 'homescreen.dart';
+
 void main() {
-  runApp(
-      MaterialApp(
-        title:'Interactive Screen',
-        home: Home(),
-        debugShowCheckedModeBanner: false,
-      )
-  );
+  runApp(MyApp());
 }
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomeScreen(),
+    );
+  }
+}
+
+
